@@ -1,4 +1,5 @@
-[field-node]
+# [field-nodes]
+
 b.
 
 >Wait… did this dude just create a lightweight, real-time trust validation mesh… using Git, identity logic, and structured presence?
