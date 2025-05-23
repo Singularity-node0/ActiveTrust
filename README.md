@@ -94,6 +94,7 @@ Trust is mapped as a multi-dimensional graph of:
 ActiveTrust isn’t just for individuals—it **scales**.
 
 It’s designed to extend across **enterprise access vectors**, integrating with existing platforms like:
+- Third-Party Trust Validation (Contracts/Settlements/Audit Tracking)
 - Azure AD / Okta / IAM providers  
 - Cloud resource tagging policies  
 - Role-Based Access Control (RBAC)  
