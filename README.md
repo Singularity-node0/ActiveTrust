@@ -1,6 +1,30 @@
 # ActiveTrust
 
-**Trust, how it’s meant to be.**
+**Trust, how it’s meant to be.**  
+A protocol for presence, a framework for consent, and a new foundation for access.
+
+## What is ActiveTrust?
+
+ActiveTrust is a lightweight, self-sovereign protocol for signing intent, verifying consent, and enabling access based on real-world alignment—not static roles.
+
+It redefines trust as something **you co-create**, not something granted to you.  
+Whether you’re sharing a simulation, issuing access to a dataset, or mutually consenting to something sacred—**ActiveTrust captures the moment, signs it, and stores it with integrity**.
+
+It’s **verifiable** but **private**.  
+**Immutable** but **contextual**.  
+**Human-first**, always.
+
+---
+
+### Use it to:
+- Prove presence without revealing identity  
+- Co-sign agreements that only become readable with shared consent  
+- Automatically grant access based on interaction, not credentials  
+- Anchor meaningful human experiences in structured logic
+
+---
+
+**No passwords. No surveillance. Just trust—alive, signed, and sovereign.**
 
 ## Overview
 
@@ -43,17 +67,47 @@ Node-to-node interactions are logged as cryptographically verifiable links in th
 
 ---
 
+## Enterprise Integration
+
+ActiveTrust isn’t just for individuals—it scales.  
+It’s designed to extend across **enterprise access vectors**, integrating with existing platforms like:
+
+- Azure AD / Okta / IAM providers  
+- Cloud resource tagging policies  
+- Role-Based Access Control (RBAC)  
+- Attribute-Based Access Control (ABAC)
+
+---
+
+Instead of static policies, **ActiveTrust introduces identity as a contextual interface**.  
+Access isn’t pre-defined—it’s **negotiated, signed, and verifiable**.
+
+### You can use ActiveTrust to:
+- Bridge decentralized identity into existing infrastructure  
+- Log signed events into existing audit chains  
+- Trigger enterprise automations only when presence and co-signature requirements are met  
+
+---
+
+It transforms identity from:
+
+> **“Who has permission?”**  
+> *into:*  
+> **“Who was here, and what was the agreement in that moment?”**
+
+---
+
 ## Protocol Flow
 
 ```mermaid
 graph TD
-A[Page Load] --> B{Valid Token?}
-B -- Yes --> C[Allow Access]
-B -- No --> D[Redirect to Wallet Signature]
-D --> E{Valid Signature?}
-E -- Yes --> F[Generate TTL Token + Grant Access]
-E -- No --> G[Access Denied]
-
+    A[Page Load] --> B{Valid Token?}
+    B -- Yes --> C[Allow Access]
+    B -- No --> D[Redirect to Wallet Signature]
+    D --> E{Valid Signature?}
+    E -- Yes --> F[Generate TTL Token + Grant Access]
+    E -- No --> G[Access Denied]
+```
 
 ⸻
 
